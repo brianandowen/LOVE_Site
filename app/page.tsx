@@ -13,8 +13,8 @@ import React, { useEffect, useRef, useState } from "react";
 // ===================== 內容設定（請改這裡） =====================
 const config = {
   loverName: "小跑皮",
-  fromName: "brianandowen",
-  finale: "願往後歲月，都是你。",
+  fromName: "大狗",
+  finale: "祝福我們，都要開開心，有彼此的陪伴，希望往後餘生都是你。",
   letters: [
     { text: "第一次和妳出國的我，既興奮又緊張，期待我們出去又怕你會生氣", img: "/photos/japan-day1-01.jpg" },
     { text: "第一次走在花火大會的路上，煙火像把夜空切成很多段，我們慢慢的欣賞", img: "/photos/japan-day1-02.jpg" },
