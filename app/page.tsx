@@ -118,21 +118,30 @@ type Stage = "envelope" | "box" | "letters" | "novel" | "finale";
 
 // ===================== 通用小工具 =====================
 function useLongPress(callback: () => void, delay = 1000) {
-  const timer = useRef<number | null>(null);
+  // 用全域 setTimeout 的回傳型別，跨環境最不會吵
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
   const start = () => {
     if (timer.current) return;
-    // @ts-ignore
-    timer.current = window.setTimeout(() => {
+    // 注意：這裡不要加 window.
+    timer.current = setTimeout(() => {
       callback();
       timer.current = null;
     }, delay);
   };
+
   const clear = () => {
-    if (timer.current) window.clearTimeout(timer.current);
-    timer.current = null;
+    if (timer.current) {
+      // 同理，用 clearTimeout（不要加 window.）
+      clearTimeout(timer.current);
+      timer.current = null;
+    }
   };
+
   return { start, clear };
 }
+
+
 
 // ===================== 花瓣背景（Canvas） =====================
 function PetalsBackground({ active }: { active: boolean }) {
