@@ -19,7 +19,7 @@ const config = {
     { text: "第一次和妳出國的我，既興奮又緊張，期待我們出去又怕你會生氣", img: "/photos/japan-day1-01.jpg" },
     { text: "第一次走在花火大會的路上，煙火像把夜空切成很多段，我們慢慢的欣賞", img: "/photos/japan-day1-02.jpg" },
     { text: "最喜歡的事情，就是看著你笑。", img: "/photos/daily-01.jpg" },
-    { text: "有沒有發現，我們穿著和服特別的是何", img: "/photos/daily-02.jpg" },
+    { text: "有沒有發現，我們穿著和服特別適合", img: "/photos/daily-02.jpg" },
   {
     text: "在機場的路上，我一個人扛了三個行李，心裡卻覺得一點也不累，因為是帶著你一起去冒險。",
     img: "/photos/airport-luggage.jpg",
